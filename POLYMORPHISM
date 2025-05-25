@@ -1,0 +1,23 @@
+class Vehicle{
+    public void move(){
+        System.out.println("Vehicle is moving");
+    }
+}
+class car extends Vehicle{
+      public void move(){
+      System.out.println("Car is driving on the road");
+}
+}
+class boat extends Vehicle{
+      public void move(){
+      System.out.println("boat is driving on the river");
+}
+}
+    public class Main {
+    public static void main(String[] args) {
+   Vehicle v1=new car();
+   Vehicle v2=new boat();
+   v1.move();
+   v2.move();
+}
+}
